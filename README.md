@@ -76,13 +76,17 @@ Dependencias de Desenvolvimento:
 3. **Crie um arquivo `.env` com as variáveis necessárias**
    
    DB_CONNECTION_STRING= # string de conexão com MongoDB
+   <b >
    JWT_SECRET= # chave secreta para JWT
+   <b >
    COSMIC_BUCKET_SLUG=
+   <b >
    COSMIC_READ_KEY=
+   <b >
    COSMIC_WRITE_KEY=
    
 
-4. **Execute a aplicação**
+5. **Execute a aplicação**
   
    npm run dev   
 
