@@ -32,7 +32,7 @@ Este projeto é uma **API inspirada no Instagram**, desenvolvida como parte do c
 
 
 Dependencias:
-
+ ```bash
   "@cosmicjs/sdk": "^1.5.2",
   "cosmicjs": "^5.0.2",
   "jsonwebtoken": "^9.0.2",
@@ -58,7 +58,7 @@ Dependencias de Desenvolvimento:
   "eslint-config-next": "15.3.2",
   "next": "^15.3.2",
   "typescript": "^5"
-
+```
 
 
 ## 🧩 Instalação e Execução
@@ -71,17 +71,7 @@ Dependencias de Desenvolvimento:
 2. **Instale as dependências**
    ```bash
    npm install
-   ```
-
-3. **Crie um arquivo `.env` com as variáveis necessárias**  
-
-```env
-DB_CONNECTION_STRING= # string de conexão com MongoDB
-JWT_SECRET=           # chave secreta para JWT
-COSMIC_BUCKET_SLUG=   # slug do bucket no CosmicJS
-COSMIC_READ_KEY=      # chave de leitura do CosmicJS
-COSMIC_WRITE_KEY=     # chave de escrita do CosmicJS
-   
+   ```   
 
 5. **Execute a aplicação**
   
