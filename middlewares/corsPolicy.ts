@@ -1,23 +1,28 @@
 import type { NextApiRequest, NextApiResponse, NextApiHandler } from 'next';
 import type { StandardResponse } from '../types/StandardResponse';
-import NextCors from 'nextjs-cors';
-import { headers } from 'next/headers';
 
 export const corsPolicy = (handler: NextApiHandler) =>
-    async (req: NextApiRequest, res: NextApiResponse<StandardResponse>) => {
+  async (req: NextApiRequest, res: NextApiResponse<StandardResponse>) => {
+    try {
+      res.setHeader('Access-Control-Allow-Credentials', 'true');
+      res.setHeader('Access-Control-Allow-Origin', '*'); // ajuste aqui se quiser restringir
+      res.setHeader(
+        'Access-Control-Allow-Methods',
+        'GET,POST,PUT,OPTIONS'
+      );
+      res.setHeader(
+        'Access-Control-Allow-Headers',
+        'X-CSRF-Token, X-Requested-With, Accept, Content-Type, Authorization'
+      );
 
-        try {
+      if (req.method === 'OPTIONS') {
+        res.status(200).end();
+        return;
+      }
 
-            await NextCors(req, res, {
-                origin: '*',
-                methods: ['GET', 'POST', 'PUT'],
-                optionSuccessStatus: 200,
-            });
-
-            return handler(req, res);
-
-        } catch (error) {
-            console.error('CORS policy error:', error);
-            res.status(500).json({ error: 'Internal Server Error.' });
-        }
-    } 
+      return handler(req, res);
+    } catch (error) {
+      console.error('CORS policy error:', error);
+      res.status(500).json({ error: 'Internal Server Error.' });
+    }
+  };
