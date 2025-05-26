@@ -1,36 +1,48 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📸 Devagram API - Clone do Instagram
 
-## Getting Started
+Este projeto é uma **API inspirada no Instagram**, desenvolvida como parte do curso **[Devaria](https://devaria.com.br/)**. O objetivo é praticar e consolidar os conhecimentos em **JavaScript/Node.js** criando uma aplicação com funcionalidades reais de uma rede social.
 
-First, run the development server:
+## 🚀 Funcionalidades Implementadas
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- ✅ Cadastro de usuário  
+- ✅ Login com autenticação JWT  
+- ✅ Edição de perfil do usuário  
+- ✅ Publicação de fotos (upload com Multer + CosmicJS)  
+- ✅ Curtir e descurtir postagens  
+- ✅ Seguir e deixar de seguir outros usuários  
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Tecnologias Utilizadas
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Backend
+- **Node.js**  
+- **Mongoose** (MongoDB ODM)  
+- **jsonwebtoken** (Autenticação)  
+- **md5** (Hash de senha)  
+- **Multer** (Upload de imagens)  
+- **CosmicJS** (Armazenamento de imagens)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Tipagem e Qualidade de Código
+- **TypeScript**  
+- **ESLint** (Linting com `eslint-config-next`)  
+- Tipagens com `@types/*` para bibliotecas utilizadas
 
-## Learn More
+## 🧩 Instalação e Execução
 
-To learn more about Next.js, take a look at the following resources:
+1. **Clone o repositório**   
+   git clone https://github.com/seu-usuario/devagram-api.git
+   cd devagram-api
+   
+3. Instale as dependências
+   npm install
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   💡 Sobre o Projeto
+Este projeto foi desenvolvido com fins educativos, com foco no aprendizado das principais tecnologias utilizadas em aplicações modernas com Node.js, React e Next.js.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Curso Devaria: https://devaria.com.br
 
-## Deploy on Vercel
+📬 Contato
+Em caso de dúvidas, sugestões ou feedbacks, fique à vontade para abrir uma issue ou entrar em contato.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+🛠️ Feito com dedicação e foco nos estudos!
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
