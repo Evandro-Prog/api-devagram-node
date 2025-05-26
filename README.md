@@ -73,17 +73,14 @@ Dependencias de Desenvolvimento:
    npm install
    ```
 
-3. **Crie um arquivo `.env` com as variáveis necessárias**
-   
-   DB_CONNECTION_STRING= # string de conexão com MongoDB
-   <b>  
-   JWT_SECRET= # chave secreta para JWT
-   <b>
-   COSMIC_BUCKET_SLUG=
-   <b>
-   COSMIC_READ_KEY=
-   <b>
-   COSMIC_WRITE_KEY=
+3. **Crie um arquivo `.env` com as variáveis necessárias**  
+
+
+DB_CONNECTION_STRING= # string de conexão com MongoDB
+JWT_SECRET=           # chave secreta para JWT
+COSMIC_BUCKET_SLUG=   # slug do bucket no CosmicJS
+COSMIC_READ_KEY=      # chave de leitura do CosmicJS
+COSMIC_WRITE_KEY=     # chave de escrita do CosmicJS
    
 
 5. **Execute a aplicação**
