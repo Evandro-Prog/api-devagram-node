@@ -71,9 +71,19 @@ Dependencias de Desenvolvimento:
 2. **Instale as dependências**
    ```bash
    npm install
-   ```   
+   ```
 
-5. **Execute a aplicação**
+ 3. **Crie um arquivo `.env` com as variáveis necessárias**
+
+```env
+DB_CONNECTION_STRING= # string de conexão com MongoDB
+JWT_SECRET=           # chave secreta para JWT
+COSMIC_BUCKET_SLUG=   # slug do bucket no CosmicJS
+COSMIC_READ_KEY=      # chave de leitura do CosmicJS
+COSMIC_WRITE_KEY=     # chave de escrita do CosmicJS
+```
+
+4. **Execute a aplicação**
   
    npm run dev   
 
