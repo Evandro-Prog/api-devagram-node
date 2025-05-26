@@ -75,7 +75,7 @@ Dependencias de Desenvolvimento:
 
 3. **Crie um arquivo `.env` com as variáveis necessárias**  
 
-
+```env
 DB_CONNECTION_STRING= # string de conexão com MongoDB
 JWT_SECRET=           # chave secreta para JWT
 COSMIC_BUCKET_SLUG=   # slug do bucket no CosmicJS
